@@ -29,40 +29,55 @@ izolacji, obsłudze klientów oraz zabezpieczeniom przeglądarki</b><br><br>
   
 <b>5)czy jest to język obiektowy , jeśli tak to dlaczego.</b><br><br>
   
-JavaScript jest uważany za stosunkowo bezpieczne narzędzie z kilku powodów, szczególnie w kontekście przeglądarek internetowych<br><br>
+Tak, JavaScript jest językiem obiektowym, ponieważ wspiera programowanie oparte na obiektach.<br><br>
   
 <b>6)wymień zalety JS:</b><br><br>
   
-Zaleta1: Uniwersalnosc.<br><br>
+Uniwersalność.<br><br>
 Zaleta2: Interaktywność<br><br>
-Zaleta3: Wsparcie dla dużych społeczności i narzędzi<br><br>
+Zaleta3: Wsparcie dla asynchroniczności<br><br>
   
 <b>7)Framework to:</b><br>
   
-Framework to struktura programistyczna, która dostarcza zestaw narzędzi,<br>
-bibliotek oraz konwencji, ułatwiających tworzenie aplikacji w danym języku programowania.<br><br>
+Framework to zestaw narzędzi, bibliotek i konwencji,<br>
+  które ułatwiają tworzenie aplikacji lub oprogramowania.<br><br>
   
 <b>8)Do aplikacji mobilnych można użyć Framework</b><br><br>
   
-React, Flutter, Ionik.<br><br>
+Flutter, React Ionik.<br><br>
   
 <b>9)Aplikacje responsywne to:</b><br><br>
 
-Aplikacje responsywne to aplikacje lub strony internetowe, które dostosowują się do różnych rozmiarów ekranów i urządzeń.<br><br>
+Aplikacje responsywne to aplikacje internetowe, które dostosowują swoje układy i interfejsy użytkownika do różnych rozmiarów ekranów i urządzeń.<br><br>
   
 <b>10)Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu </b><br><br>
- function suma(a, b) {<br>
-    return a + b;<br>
-  
-Definicja funkcji: function suma(a, b) - definiuje funkcję o nazwie suma, która przyjmuje dwa argumenty: a i b.<br>
-Zwracanie wartości: return a + b; - funkcja oblicza sumę argumentów i zwraca wynik.<br><br>
+<input type="button">: Tworzy przycisk w formularzu.
 
+name="przycisk": Nadaje nazwę przyciskowi, co może być użyteczne w kontekście formularzy.
+
+value="Nowa Strona": Określa tekst wyświetlany na przycisku. W tym przypadku to "Nowa Strona".
+
+onclick="WinOpen(' '): Określa, co się stanie po kliknięciu przycisku. Wywołuje funkcję WinOpen, która powinna być zdefiniowana w JavaScript. Argument (' ')
+sugeruje, że może być to miejsce na adres URL, który otworzy nową stronę (pusty argument może spowodować błędy, jeśli funkcja nie obsługuje pustych wartości).
+  
 <b>11)Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu </b><br><br>
-let wynik = suma(5, 3); <br>
-console.log(wynik); <br><br>
- 
-Wywołanie funkcji: let wynik = suma(5, 3); - wywołuje funkcję suma z argumentami 5 i 3, a wynik (8) jest przypisywany do zmiennej wynik.<br>
-Wyświetlenie wyniku: console.log(wynik); - wypisuje wartość zmiennej wynik (8) na konsoli.<br><br>
+
+window.open: To metoda w JavaScript, która otwiera nowe okno przeglądarki lub nową kartę.
+
+"obraz.html": Pierwszy argument to adres URL lub ścieżka do pliku, który ma być otwarty. W tym przypadku otwierany jest plik HTML o nazwie obraz.html.
+
+"okienko": Drugi argument to nazwa nowego okna. Można ją wykorzystać do odwołania się do tego samego okna później (np. jeśli chcemy je ponownie otworzyć).
+
+"toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200": Trzeci argument to łańcuch opcji, który definiuje właściwości nowego okna:
+
+toolbar=no: Ukrywa pasek narzędzi.
+directories=no: Ukrywa pasek z katalogami.
+menubar=no: Ukrywa pasek menu.
+height=280: Ustala wysokość okna na 280 pikseli.
+width=160: Ustala szerokość okna na 160 pikseli.
+top=200: Ustala położenie górnej krawędzi okna na 200 pikseli od góry ekranu.
+left=200: Ustala położenie lewej krawędzi okna na 200 pikseli od lewej strony ekranu.
+
 
  <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
  </form>
