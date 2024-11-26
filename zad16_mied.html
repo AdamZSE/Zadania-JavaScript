@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+ <head>
+ <title> </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<div style="color:navy;font-size:100px;">
+ <script language="JavaScript">
+let A=prompt("A=","");
+let A_mied=parseFloat(A);
+let B=prompt("B=","");
+let B_mied=parseFloat(B);
+
+let C_mied=A_mied*A_mied*A_mied;
+let D_mied=3*A_mied*A_mied*B_mied;
+let E_mied=3*A_mied*B_mied*B_mied;
+let F_mied=B_mied*B_mied*B_mied;
+let O_mied=C_mied+D_mied+E_mied+F_mied;
+
+document.write("A="+A_mied+" "+"B="+B_mied+"<br>");
+document.write("("+A_mied+"+");
+document.write(B_mied+")^3=");
+document.write(A_mied+"^3 + 3*(("+A_mied+")^"+B_mied+")*("+B_mied+") + 3*("+A_mied+")*(("+B_mied+")^"+B_mied+")");
+document.write(B_mied+"^3 = "+C_mied+"+"+D_mied+"+"+E_mied+"+"+F_mied+"="+O_mied+"<br>");
+ </script>
+</div>
+</body>
+</html>
