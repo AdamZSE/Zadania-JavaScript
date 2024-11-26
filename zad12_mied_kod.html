@@ -1,7 +1,7 @@
 <html>
 <head>
     <script type="text/javascript">
-        function okno_zamknij_smula() {
+        function okno_zamknij_miedlar() {
             window.close()
         }
         29
@@ -9,26 +9,26 @@
 </head>
 <body>
 <form>
-<textarea name="Smuła" cols="120" rows="30" readonly>
+<textarea name="Międlar" cols="120" rows="30" readonly>
 <!DOCTYPE html>
 <html lang="pl">
 
 <head>
-    <title>Zadanie 12</title>
+    <title>Zadanie-12</title>
     <meta charset="utf-8">
 </head>
 <body>
     <div id="strona" style="color:red;font-size:50px;">
         <script language="JavaScript">
-            let D1_smu = prompt("Pierwsza data (D1_smu):", "");
-            let G1_smu = prompt("Pierwsza godzina (G1_smu):", "");
-            let D2_smu = prompt("Druga data (D2_smu):", "");
-            let G2_smu = prompt("Druga godzina (G2_smu):", "");
+            let D1_mied = prompt("Pierwsza data (D1_mied):", "");
+            let G1_mied = prompt("Pierwsza godzina (G1_mied):", "");
+            let D2_mied = prompt("Druga data (D2_mied):", "");
+            let G2_mied = prompt("Druga godzina (G2_mied):", "");
 
-            let D1 = parseInt(D1_smu);
-            let G1 = parseInt(G1_smu);
-            let D2 = parseInt(D2_smu);
-            let G2 = parseInt(G2_smu);
+            let D1 = parseInt(D1_mied);
+            let G1 = parseInt(G1_mied);
+            let D2 = parseInt(D2_mied);
+            let G2 = parseInt(G2_mied);
 
             let iloscSekund = ((D1 - D2) * 24 * 60 * 60) + ((G1 - G2) * 60 * 60);
             document.getElementById("strona").innerHTML = "Ilość sekund: " + iloscSekund + " sekund";
@@ -39,7 +39,7 @@
 </html>
 </textarea>
     </form>
-    <input type="button" value="zamknij okno" onclick="okno_zamknij_smula()" />
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_miedlar()" />
     <script type="text/javascript">
     </script>
 </body>
