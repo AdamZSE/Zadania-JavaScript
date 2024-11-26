@@ -1,7 +1,7 @@
 <html>
 <head>
     <script type="text/javascript">
-        function okno_zamknij_smula() {
+        function okno_zamknij_miedlar() {
             window.close()
         }
         29
@@ -9,8 +9,9 @@
 </head>
 <body>
 <form>
-<textarea name="Smuła" cols="120" rows="30" readonly>
+<textarea name="Międlar" cols="120" rows="30" readonly>
 <!DOCTYPE html>
+<html>
  <head>
  <title> </title>
  <meta charset="utf-8">
@@ -19,28 +20,28 @@
 <div style="color:navy;font-size:100px;">
  <script language="JavaScript">
 let A=prompt("A=","");
-let A_smu=parseFloat(A);
+let A_mied=parseFloat(A);
 let B=prompt("B=","");
-let B_smu=parseFloat(B);
+let B_mied=parseFloat(B);
 
-let C_smu=A_smu*A_smu*A_smu;
-let D_smu=3*A_smu*A_smu*B_smu;
-let E_smu=3*A_smu*B_smu*B_smu;
-let F_smu=B_smu*B_smu*B_smu;
-let O_smu=C_smu+D_smu+E_smu+F_smu;
+let C_mied=A_mied*A_mied*A_mied;
+let D_mied=3*A_mied*A_mied*B_mied;
+let E_mied=3*A_mied*B_mied*B_mied;
+let F_mied=B_mied*B_mied*B_mied;
+let O_mied=C_mied+D_mied+E_mied+F_mied;
 
-document.write("A="+A_smu+" "+"B="+B_smu+"<br>");
-document.write("("+A_smu+"+");
-document.write(B_smu+")^3=");
-document.write(A_smu+"^3 + 3*(("+A_smu+")^"+B_smu+")*("+B_smu+") + 3*("+A_smu+")*(("+B_smu+")^"+B_smu+")");
-document.write(B_smu+"^3 = "+C_smu+"+"+D_smu+"+"+E_smu+"+"+F_smu+"="+O_smu+"<br>");
+document.write("A="+A_mied+" "+"B="+B_mied+"<br>");
+document.write("("+A_mied+"+");
+document.write(B_mied+")^3=");
+document.write(A_mied+"^3 + 3*(("+A_mied+")^"+B_mied+")*("+B_mied+") + 3*("+A_mied+")*(("+B_mied+")^"+B_mied+")");
+document.write(B_mied+"^3 = "+C_mied+"+"+D_mied+"+"+E_mied+"+"+F_mied+"="+O_mied+"<br>");
  </script>
 </div>
 </body>
 </html>
 </textarea>
     </form>
-    <input type="button" value="zamknij okno" onclick="okno_zamknij_smula()" />
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_miedlar()" />
     <script type="text/javascript">
     </script>
 </body>
