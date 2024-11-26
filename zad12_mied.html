@@ -8,15 +8,15 @@
 <body>
     <div id="strona" style="color:red;font-size:50px;">
         <script language="JavaScript">
-            let D1_mied = prompt("Pierwsza data (D1_mied):", "");
-            let G1_mied = prompt("Pierwsza godzina (G1_mied):", "");
-            let D2_mied = prompt("Druga data (D2_mied):", "");
-            let G2_mied = prompt("Druga godzina (G2_mied):", "");
+            let D1_mied = prompt("Pierwsza data (D1_mie):", "");
+            let G1_mied = prompt("Pierwsza godzina (G1_mie):", "");
+            let D2_mied = prompt("Druga data (D2_mie):", "");
+            let G2_mied = prompt("Druga godzina (G2_mie):", "");
 
-            let D1 = parseInt(D1_mied);
-            let G1 = parseInt(G1_mied);
-            let D2 = parseInt(D2_mied);
-            let G2 = parseInt(G2_mied);
+            let D1 = parseInt(D1_mie);
+            let G1 = parseInt(G1_mie);
+            let D2 = parseInt(D2_mie);
+            let G2 = parseInt(G2_mie);
 
             let iloscSekund = ((D1 - D2) * 24 * 60 * 60) + ((G1 - G2) * 60 * 60);
             document.getElementById("strona").innerHTML = "Ilość sekund: " + iloscSekund + " sekund";
