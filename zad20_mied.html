@@ -12,7 +12,7 @@
 
             const AB = Math.sqrt(Math.pow(xb - xa, 2) + Math.pow(yb - ya, 2));
 			
-            document.getElementById("nazwa").innerHTML = `Długość boku AB = {AB.toFixed(2)}`;
+            document.getElementById("nazwa").innerHTML = `Długość boku AB = ${AB.toFixed(2)}`;
         }
 
         function BC_mie() {
@@ -23,7 +23,7 @@
 
            
             const BC = Math.sqrt(Math.pow(xc - xb, 2) + Math.pow(yc - yb, 2));
-            document.getElementById("nazwa").innerHTML = `Długość boku BC = {BC.toFixed(2)}`;
+            document.getElementById("nazwa").innerHTML = `Długość boku BC = ${BC.toFixed(2)}`;
         }
 
         function AC_mie() {
@@ -34,22 +34,22 @@
 
           
             const AC = Math.sqrt(Math.pow(xc - xa, 2) + Math.pow(yc - ya, 2));
-            document.getElementById("nazwa").innerHTML = `Długość boku AC = {AC.toFixed(2)}`;
+            document.getElementById("nazwa").innerHTML = `Długość boku AC = ${AC.toFixed(2)}`;
         }
     </script>
 </head>
 <body>
     <h1>Oblicz długości boków trójkąta</h1>
     
-    Punkt A
+    <h2>Punkt A</h2>
     Podaj xa = <input type="text" id="xa"><br>
     Podaj ya = <input type="text" id="ya"><br><br>
 
-    Punkt B
+    <h2>Punkt B</h2>
     Podaj xb = <input type="text" id="xb"><br>
     Podaj yb = <input type="text" id="yb"><br><br>
 
-    Punkt C
+    <h2>Punkt C</h2>
     Podaj xc = <input type="text" id="xc"><br>
     Podaj yc = <input type="text" id="yc"><br><br>
 
