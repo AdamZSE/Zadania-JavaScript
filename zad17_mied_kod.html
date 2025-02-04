@@ -1,7 +1,7 @@
 <html>
 <head>
     <script type="text/javascript">
-        function okno_zamknij_smula() {
+        function okno_zamknij_miedlar() {
             window.close()
         }
         35
@@ -9,7 +9,7 @@
 </head>
 <body>
 <form>
-<textarea name="Smuła" cols="120" rows="30" readonly>
+<textarea name="Międlar" cols="120" rows="30" readonly>
 <!DOCTYPE html>
  <head>
  <title> </title>
@@ -20,27 +20,27 @@
  <script language="JavaScript">
 
 document.write("1. Wymień cztery sposoby wyprowadzania danych w JS"+"<br>");
-document.write("<b><u>"+"z użyciem dokument.write(), z użyciem okienka alert(), do okienek formularza i do tabeli"+"</b></u><br>");
+document.write("<b><u>"+"console.log(), alert(), document.write(), prompt()"+"</b></u><br>");
 document.write("2. Czym jest funkcja w JS, omów przy użyciu 4 podpunktów?"+"<br>");
-document.write("<b><u><lu><li>"+"Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy"+"</li>"+
-               "<li>"+"Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod"+"</li>"+
-               "<li>"+"Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. suma_kry(a, b)"+"</li>"+
-               "<li>"+"Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return"+"</b></u></li></lu>");
+document.write("<b><u><lu><li>"+"Funkcja jest tworzona za pomocą słowa kluczowego function, a jej definicja zawiera nazwę, listę parametrów oraz ciało funkcji."+"</li>"+
+               "<li>"+"Funkcję wywołuje się po jej zdefiniowaniu, używając jej nazwy i opcjonalnie przekazując argumenty."+"</li>"+
+               "<li>"+"Funkcje mogą przyjmować parametry, które są zmiennymi, do których przypisywane są wartości (argumenty) przekazywane podczas wywołania funkcji."+"</li>"+
+               "<li>"+"Funkcja może zwracać wartość za pomocą słowa kluczowego return. Zwrócona wartość może być użyta w dalszej części programu."+"</b></u></li></lu>");
 document.write("3. Omów metody getElementsByName, getElementById, getElementByTagName"+"<br>");
-document.write("<b><u>"+"getElementById"+"("+"id"+")"+" - dostęp do wszystkich elementów o konkretnej wartości atrybutu id "+"<br>"+
-				"getElementByTagName"+"("+"znacznik"+")"+" - dostęp do wszystkich elementów o typie znacznika, np. P lub DIV"+"<br>"+
-				"getElementByName"+"("+"nazwa"+")"+" - dostęp do wszystkich elementów o konkretnej wartości atrybutu"+"</b></u><br>");
+document.write("<b><u>"+"getElementById"+"("+"id"+")"+" - Zwraca pojedynczy element o określonym identyfikatorze id. Jest to najbardziej wydajna metoda, gdyż id jest unikalne na stronie. "+"<br>"+
+				"getElementByTagName"+"("+"znacznik"+")"+" - Zwraca kolekcję wszystkich elementów na stronie o określonym tagu HTML, np. div, p, span."+"<br>"+
+				"getElementByName"+"("+"nazwa"+")"+" - Zwraca kolekcję wszystkich elementów na stronie, które mają określoną wartość atrybutu name."+"</b></u><br>");
 document.write("4. Omów właściwości innerHTML innerText className. (każdą osobno)"+"<br>");
-document.write("<b><u>"+"innerHTML - jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie, albo usunięcie kodu HTML z danego elementu HTML np. w tabeli"+"<br>"+
-				"innerText – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie"+"<br>"+
-				"className – umożliwia określenie klasy CSS użytej do prezentacji elementu"+"</b></u>");
+document.write("<b><u>"+"innerHTML - Zwraca lub ustawia całą zawartość HTML elementu, w tym tagi."+"<br>"+
+				"innerText – Zwraca lub ustawia tylko tekst (bez tagów HTML) w elemencie."+"<br>"+
+				"className – Zwraca lub ustawia klasy CSS elementu jako ciąg tekstowy."+"</b></u>");
  </script>
 </div>
 </body>
 </html>
 </textarea>
     </form>
-    <input type="button" value="zamknij okno" onclick="okno_zamknij_smula()" />
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_miedlar()" />
     <script type="text/javascript">
     </script>
 </body>
