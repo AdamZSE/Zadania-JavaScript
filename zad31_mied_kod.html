@@ -12,19 +12,19 @@
 <html>
  <head>
  <script type="text/javascript">
- var Wazon = {
-jaki_materiał: 'porcelana',
+ var wazon = {
+materiał: 'porcelana',
 kolor: 'biały',
 kształt: 'cylindryczny',
-Wazon_wyswietl_Miedlar: function ()
+wazon_wyswietl_Miedlar: function ()
 {
- document.write(this.jaki_materiał + ' ' + this.kolor + ' ' + this.kształt)
+ document.write(this.materiał + ' ' + this.kolor + ' ' + this.kształt)
  }
 }
-Wazon.wazon_wyswietl_Miedlar();
-Wazon.Wzor="fale oraz koła";
-Wazon.Wazon_pokaz_Miedlar=function() {alert('Wzór: ' + this.wzor + ' ')}
-Wazon.Wazon_pokaz_Miedlar();
+wazon.wazon_wyswietl_Miedlar();
+wazon.wzor="fale";
+wazon.wazon_pokaz_Miedlar=function() {alert('wzór: ' + this.wzor + ' ')}
+wazon.wazon_pokaz_Miedlar();
  </script>
  </head>
 <body>
@@ -32,13 +32,13 @@ Wazon.Wazon_pokaz_Miedlar();
  Programowanie obiektowe. <br>
  Obiekt to Wazon<br>
  Pola:<br>
- jaki material<br>
+ material<br>
  kolor<br>
  kształt<br>
- metoda: 
- Wazon_wyswietl_Miedlar<br>
- nowe pole to smak <br>
- nowa metoda to Wazon_pokaz_Miedlar();<br>
+ metoda:
+ wazon_wyswietl_Miedlar<br>
+ nowe pole to wzór <br>
+ nowa metoda to wazon_pokaz_Miedlar();<br>
 </body>
 </html>
 </textarea>
