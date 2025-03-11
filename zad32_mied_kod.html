@@ -1,0 +1,54 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_miedlar() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Międlar" cols="120" rows="30" readonly>
+<html>
+ <head>
+ <script type="text/javascript">
+ function Wazonmiedlar(material_s,kolor_s,ksztalt_s,wzor_s)
+{
+this.material=material_s;
+this.kolor=kolor_s;
+this.ksztalt=ksztalt_s;
+this.wzor=wzor_s;
+}
+ Wazonmiedlar.prototype.pokaz_miedlar = function () 
+ {
+ alert(this.material + ' ' + this.kolor+ ' ' + this.ksztalt+ ' ' + this.wzor);
+ };
+var wazon_szklany = new Wazonmiedlar("szklany", "przezroczysty", "smukły", "brak"); 
+var wazon_ceramiczny = new Wazonmiedlar("ceramiczny", "niebieski", "pękaty", "popękane szkło");
+var wazon_metalowy = new Wazonmiedlar("metalowy","srebro","nieregularny", "Linje");
+  
+wazon_szklany.pokaz_miedlar(); 
+wazon_ceramiczny.pokaz_miedlar(); 
+wazon_metalowy.pokaz_miedlar(); 
+  
+ document.write("dostęp do właściwości"+"<br>");
+  
+ document.write("Wazon 1: "+" "+jablko.material+" "+jablko.kolor+" "+jablko.ksztalt+" "+jablko.wzor+"<br>");
+ document.write("Wazon 2: "+" "+banan.material+" "+banan.kolor+" "+banan.ksztalt+" "+banan.wzor+"<br>");
+document.write("Wazon 3: "+" "+gruszka.material+" "+gruszka.kolor+" "+gruszka.ksztalt+" "+gruszka.wzor+"<br>");
+
+  
+ </script> 
+ </head>
+<body>
+<br>
+ programowanie obiektowe 
+</body>
+</html>
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_miedlar()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
