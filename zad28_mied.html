@@ -1,6 +1,6 @@
 <html>
  <head>
- <title> Smuła 3F</title>
+ <title> Międlar 3F</title>
 <script language="JavaScript">
 function okno_zamknij() 
  {
@@ -12,26 +12,41 @@ function okno_zamknij()
  <form>
 <ol>  
 <h1><li> Rodzaje „filozofii” programowania </li></h1>
-   <a style="font-size: 20px;"> Filozofie programowania to różne podejścia do tworzenia oprogramowania. Imperatywne koncentruje się na sekwencyjnych instrukcjach, deklaratywne określa „co” zrobić, zamiast „jak”.
+   <a style="font-size: 25px;"> Filozofie programowania to różne podejścia do tworzenia oprogramowania. Imperatywne koncentruje się na sekwencyjnych instrukcjach, deklaratywne określa „co” zrobić, zamiast „jak”.
    Obiektowe (OOP) organizuje kod wokół obiektów, a funkcyjne bazuje na funkcjach matematycznych.
    Reaktywne reaguje na zmiany danych, zdarzeniowe działa na podstawie zdarzeń, proceduralne dzieli kod na procedury, a logiczne opiera się na regułach i wnioskowaniu.  </a>
   
-<h1><li> Opisz paradygmat programowania strukturalnego. Założenia programowania strukturalnego </h1></li>
-  <a style="font-size: 20px;"> Programowanie strukturalne to paradygmat oparty na podziale kodu na logiczne bloki i eliminacji goto. Wykorzystuje trzy podstawowe konstrukcje sterujące: 
-  <li></li>sekwencję (instrukcje wykonywane kolejno), selekcję (if-else, switch) i iterację (for, while). Ułatwia czytelność, debugowanie i utrzymanie kodu. </a>
-
 <h1><li> Programowanie obiektowe: definicja (angielski skrót, obiekty, stan, zachowanie, końcowa konkluzja czym jest programowanie obiektowe).</h1></li>
-   <a style="font-size: 20px;">Programowanie obiektowe (ang. object-oriented programming) — sposób programowania, w którym programy definiuje się za pomocą:<br>
-  ......... </a>
+   <a style="font-size: 25px;">Programowanie obiektowe (ang. object-oriented programming) — sposób programowania, w którym programy definiuje się za pomocą:
+  <br>
+  Obiektów (obiekty powoływane są do życia wirtualnego przez programistę, mogą być kasowane przez programistę) np. okienka w Windows -> okienko jest obiektem,
+  Obiekt ma jakiś stan (czyli dane, w programowaniu obiektowym nazywane najczęściej polami) np. wielość okienka w Windows,
+  Obiekt wykazuje pewne zachowanie (czyli posiada pewne procedury w programowaniu obiektowym nazywane metody). Np. jest zdefiniowana metoda do zmiany wielkości okienka.
+  </a>
   
 <h1><li> Dlaczego stosujemy programowanie obiektowe? </h1></li>
- <a style="font-size: 20px;">
- <ul> ..... </ul>
+ <a style="font-size: 25px;">
+ <ul> Jest to bardziej naturalne podejście przez programistę podczas tworzenia programów ponieważ
+otaczający nas świat to różnego rodzaju przedmioty. <br>
+Tworząc program komputerowy dokonujemy pewnego ich odwzorowania rzeczywistości np. definiujemy obiekt samochód. <br>
+Definiujemy pola czyli jego stan np. rok produkcji, marka, kolor. <br>
+Definiujemy również metody czyli co umie np. hamowanie, przyśpieszanie. Definicja obiektu jego metod i pól znajduje się w klasie. <br>
+Następnie na podstawie zdefiniowanego obiektu (może mieć pola oraz metody) powołujemy obiekt w pamięci
+wirtualnej.
+</ul>
  </a>
  
 <h1><li> Omów następujące pojęcia ( w krótkiej formie)</h1></li>
- <a style="font-size: 20px;">
- <ul> ....... </ul>
+ <a style="font-size: 25px;">
+ <ul> 
+Klasa – Szablon (definicja) obiektów, określający ich właściwości (atrybuty) i zachowania (metody). <br>
+Obiekt – Konkretna instancja klasy, posiadająca swoje unikalne dane i działająca zgodnie z metodami klasy. <br>
+Właściwość (Atrybut) – Zmienna przechowywana w obiekcie, opisująca jego stan (np. kolor samochodu). <br>
+Metoda – Funkcja należąca do klasy, określająca zachowanie obiektu (np. uruchomienie silnika). <br>
+Konstruktor – Specjalna metoda klasy, wywoływana przy tworzeniu obiektu, inicjalizująca jego stan. <br>
+Dziedziczenie – Mechanizm pozwalający nowej klasie (podklasie) przejmować cechy i zachowania innej klasy (superklasy). <br>
+Hermetyzacja – Ukrywanie wewnętrznych danych obiektu przed bezpośrednim dostępem z zewnątrz, zapewniając kontrolę nad nimi. <br>
+Polimorfizm – Możliwość używania tej samej metody w różnych klasach, ale z różną implementacją, co ułatwia elastyczne programowanie. </ul>
 </a>  
 </ol>
  <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
