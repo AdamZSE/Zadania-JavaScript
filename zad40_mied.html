@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie JavaScript</title>
+    <style>
+        h1 { text-transform: uppercase; }
+    </style>
+</head>
+<body>
+    <h1>Proste działania</h1>
+    <h2>Międlar klasa 3F</h2>
+    <label for="a">Podaj pierwszą liczbę:</label>
+    <input type="number" id="a">
+    <br><br>
+    <label for="b">Podaj drugą liczbę:</label>
+    <input type="number" id="b">
+    <br><br>
+    <input type="button" value="DODAWANIE" onclick="oblicz('+')">
+    <input type="button" value="ODEJMOWANIE" onclick="oblicz('-')">
+    <input type="button" value="MNOŻENIE" onclick="oblicz('*')">
+    <input type="button" value="DZIELENIE" onclick="oblicz('/')">
+    <input type="button" value="TEORIA-Międlar" onclick="teoria()">
+    <div id="wynik" style="margin-top:20px;"></div>
+    
+    <script>
+        function oblicz(operator) {
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            let wynik;
+            
+            if (isNaN(a) || isNaN(b)) {
+                wynik = "Proszę uzupełnić obie liczby.";
+            } else if (operator === '/' && b === 0) {
+                wynik = "Nie wolno dzielić przez zero.";
+            } else {
+                wynik = "Wynik działania wynosi: " + eval(a + operator + b);
+            }
+            
+            document.getElementById("wynik").innerHTML = wynik;
+        }
+
+        function teoria() {
+            document.body.innerHTML = `
+                <h1>Teoria</h1>
+                <p><b>&lt;label for="a"&gt;Podaj pierwszą liczbę:&lt;/label&gt;</b> - etykieta dla pola input</p>
+                <p><b>&lt;input type="number" id="a"&gt;</b> - pole do wprowadzenia liczby</p>
+                <p><b>var a = document.getElementById("a").value;</b> - pobranie wartości z pola</p>
+                <p><b>if (a == "" || b == "")</b> - sprawdzenie, czy pola są puste</p>
+                <p><b>document.getElementById("wynik").innerHTML = "Wynik: " + suma;</b> - wyświetlenie wyniku</p>
+            `;
+        }
+    </script>
+</body>
+</html>
