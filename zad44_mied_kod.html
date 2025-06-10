@@ -9,27 +9,31 @@
 <body>
 <form>
 <textarea name="Międlar" cols="120" rows="30" readonly>
-<html> 
-<body> 
-<div style="color:red;font-size:50px;"> 
-<script language="JavaScript"> 
-  var nazwisko = {
- i_Mie: 'Międlar',
-
-nazwisko_wyswietl: function ()
-{
-document.write("wyświetlam "+this.i_Mie+"<br>");
-}
-    
-  }
-for(i=1;i<=10;i++) 
-{ 
-nazwisko.nazwisko_wyswietl();
-} 
-</script> 
-</div> 
-</body> 
-</html> 
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<div>
+<script language="JavaScript">
+let imie_mie="Adam";
+let nazwisko_mie="Międlar";
+document.write("ilosc wykonania petli  =  12 "+"<br>"+" wielkość liter   = 41px ")
+for(i_mie=0; i_mie<=13; i_mie++)
+if(i_mie % 2==0)
+ {
+document.write("<font-size: 41px>"+imie_mie+"</size><br>");
+ }
+else
+ {
+ {
+document.write("<font-size: 41px>"+nazwisko_mie+"</size><br>");
+ }
+ }
+</script>
+</div>
+</body>
+</html>
 </textarea>
     </form>
     <input type="button" value="zamknij okno" onclick="okno_zamknij_miedlar()" />
