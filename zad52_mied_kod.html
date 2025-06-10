@@ -11,25 +11,35 @@
 <form>
 <textarea name="Międlar" cols="120" rows="30" readonly>
 <!DOCTYPE html>
-<html lang="pl">
 <head>
+<title>Sprawdzenie danych Międlar</title>
 <meta charset="utf-8">
-<script language="JavaScript">
-var n= prompt("Liczba powtorzen: ", "")
-var inicjaly= prompt("Twoje inicjaly: ", "")
-for (var i=1; i<=n; i++)
- {
-document.write("<b>"+i+"_"+inicjaly+"_"+i+"<br></b>");
-for (var k=1; k<=13*i; k++)
- {
-document.write(" ");
- }
- }
-</script>
 </head>
 <body>
-</body>
-</html>
+<div style="font-size:22px;">
+<script language="JavaScript">
+var a_mie=8;
+var b_mie=24;
+for(var i=0; i<b_mie;i++)
+  {
+document.write("*");
+  }
+for(var i=0; i<a_mie-2;i++)
+  {
+document.write("<br>*");
+for(var j=0; j<b_mie-2;j++)
+  {
+document.write("  ");
+  }
+document.write("*");
+  }
+document.write("<br>");
+for(var i=0; i<b_mie;i++)
+  {
+document.write("*");
+  }
+</script>
+</div>
 </textarea>
     </form>
     <input type="button" value="zamknij okno" onclick="okno_zamknij_miedlar()" />
