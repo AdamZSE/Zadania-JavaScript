@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<title>Sprawdzenie danych międlar</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="font-size:22px;">
+<script language="JavaScript">
+var a_mie=prompt("wysokosc=","");
+var b_mie=prompt("szerokosc=","");
+for(var i=0; i<b_mie;i++)
+ {
+document.write("*");
+ }
+var wiersz_mie="*";
+for ( var i=0; i<(b_mie-2); i++)
+ {
+wiersz_mie=wiersz_mie+"  ";
+ }
+wiersz_mie=wiersz_mie+"*";
+for(var i=0; i<a_mie-2;i++)
+ {
+document.write("<br>"+wiersz_mie);
+ }
+document.write("<br>");
+for(var i=0; i<b_mie;i++)
+ {
+document.write("*");
+ }
+</script>
