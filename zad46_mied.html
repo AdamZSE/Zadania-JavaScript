@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html>   
-<head>    
-<title>Sprawdzenie danych Twoje nazwisko </title>    
-<meta charset="utf-8">   
-</head>  
-<body> 
-<div style="color:red;font-size:50px;"> 
-<script language="JavaScript"> 
-do { 
-var liczba1=prompt("wysokość=",""); 
-var h_mie=parseFloat(liczba1); 
-} 
-while ( h_mie<=0); 
-do { 
-var liczba1=prompt("podstawę=",""); 
-var a_mie=parseFloat(liczba1); 
-while(!( a_mie>0));. 
-} 
-while(!( a_mie>0)); 
-var Pole=a_mie*h_mie/2; 
-document.write("Pole="+Pole.toFixed(2)+" cm^2"+"<br>"); 
-</script> 
-</div> 
-</body> 
-</html> 
+<head>
+<title>Sprawdzenie danych międlar</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:red;font-size:40px;">
+<script language="JavaScript">
+do
+  {
+var liczba1=prompt("wysokosc=","");
+var h_mie=parseFloat(liczba1);
+  }
+while ( h_mie<=0 || isNaN(h_mie));
+do 
+  {
+var liczba1=prompt("podstawa=","");
+var a_mie=parseFloat(liczba1);
+  }
+while(!(a_mie>0));
+var Pole=a_mie*h_mie/2;
+document.write("Pole="+Pole.toFixed(2)+" cm^2"+"<br>");
+</script>
+</div>
+</body>
+</html>
