@@ -10,33 +10,40 @@
 <body>
 <form>
 <textarea name="Międlar" cols="120" rows="30" readonly>
-<html>
+<!DOCTYPE html>
 <head>
-<script language="JavaScript">
-function okno_zamknij()
- {
-window.close()
- }
-</script>
+<meta charset="utf-8">
 </head>
 <body>
-<div>
+<div style="color:red;font-size:40px;">
 <script language="JavaScript">
-document.write("Ilodsc wykonywania petli = 13" + "<br>");
-document.write("Wielkosc liter = 41px" + "<br>");
-var n_mie = prompt("podaj liczbe: ","");
-for (var i_mie=0; i_mie<=13; i_mie++)
- {
-if(n_mie%2 == 0)
- {
-document.write("<span style='color:blue;font-size:41px'>Międlar</span>" + "<br>");
- }
-else document.write("<span style='color:green;font-size:41px'>Adam</span>" + "<br>");
- }
+do
+  {
+do
+  {
+var liczba1=prompt("bok a=","");
+var a_mie=parseFloat(liczba1);
+  }
+while (isNaN(a_mie) || a_mie <= 0);
+do
+  {
+var liczba2=prompt("bok b=","");
+var b_mie=parseFloat(liczba2);
+  }
+while (isNaN(b_mie) || b_mie <= 0);
+do
+  {
+var liczba3=prompt("bok c=","");
+var c_mie=parseFloat(liczba3);
+  }
+while (isNaN(c_mie) || c_mie <= 0);
+  }
+while (!(a_mie + b_mie > c_mie && a_mie + c_mie > b_mie && b_mie + c_mie > a_mie));
+document.write("bok a=" + a_mie + "<br>");
+document.write("bok b=" + b_mie + "<br>");
+document.write("bok c=" + c_mie + "<br>");
 </script>
 </div>
-<br>
-<button onclick="okno_zamknij()">zamknij</button>
 </body>
 </html>
 </textarea>
