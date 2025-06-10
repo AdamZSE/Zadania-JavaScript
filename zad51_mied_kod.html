@@ -10,25 +10,25 @@
 <body>
 <form>
 <textarea name="Międlar" cols="120" rows="30" readonly>
-<!DOCTYPE html> 
-<html lang="pl"> 
-<head>  
-<meta charset="utf-8"> 
-<title>  Przykład użycia pętli </title> 
-<script language="JavaScript"> 
-document.write("<size=2cm>Międlar</style><br>")
-for ( var i=1; i<=10; i++) 
-{ 
-for ( var k=1; k<=i; k++) 
-{ 
-document.write("&nbsp");     
-} 
-document.write(i+"<br>"); 
-} 
-</script> 
-</head>  
-<body>  
-</body>  
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<script language="JavaScript">
+var n= prompt("Liczba powtorzen: ", "")
+var inicjaly= prompt("Twoje inicjaly: ", "")
+for (var i=1; i<=n; i++)
+ {
+document.write("<b>"+i+"_"+inicjaly+"_"+i+"<br></b>");
+for (var k=1; k<=13*i; k++)
+ {
+document.write(" ");
+ }
+ }
+</script>
+</head>
+<body>
+</body>
 </html>
 </textarea>
     </form>
