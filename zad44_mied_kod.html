@@ -4,34 +4,41 @@
         function okno_zamknij_smula() {
             window.close()
         }
-        29
+
     </script>
 </head>
 <body>
 <form>
 <textarea name="Międlar" cols="120" rows="30" readonly>
-<html> 
+<html>
 <head>
-<meta charset="utf-8">
+<script language="JavaScript">
+function okno_zamknij()
+ {
+window.close()
+ }
+</script>
 </head>
- <body> 
- <div> 
-    <script language="JavaScript"> 
-  let imie_mie="Adam";
-  let nazwisko_mie="Międlar";
-
-document.write("ilość wykonania pętli  =  11 "+"<br>"+" wielkość liter   = 42px ")
-      
-      for(i_mie=1; i_mie<=11; i_mie++)
-					if(i_mie % 2==0)
-                      {document.write("<font-size: 42px>"+imie_mie+"</size><br>");} 
-					else{
-                      {document.write("<font-size: 42px>"+nazwisko_mie+"</size><br>");} 
-           } 
-                  </script> 
- </div> 
- </body> 
-</html> 
+<body>
+<div>
+<script language="JavaScript">
+document.write("Ilodsc wykonywania petli = 13" + "<br>");
+document.write("Wielkosc liter = 41px" + "<br>");
+var n_mie = prompt("podaj liczbe: ","");
+for (var i_mie=0; i_mie<=13; i_mie++)
+ {
+if(n_mie%2 == 0)
+ {
+document.write("<span style='color:blue;font-size:41px'>Międlar</span>" + "<br>");
+ }
+else document.write("<span style='color:green;font-size:41px'>Adam</span>" + "<br>");
+ }
+</script>
+</div>
+<br>
+<button onclick="okno_zamknij()">zamknij</button>
+</body>
+</html>
 </textarea>
     </form>
     <input type="button" value="zamknij okno" onclick="okno_zamknij_miedlar()" />
